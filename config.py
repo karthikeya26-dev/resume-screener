@@ -2,7 +2,8 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-DATABASE_URL = "mysql+pymysql://root:Karthik%402026@localhost/resume_db"
+# Default to local MySQL, but allow Render to override via Environment Variables
+DATABASE_URL = os.getenv("DATABASE_URL", "mysql+pymysql://root:Karthik%402026@localhost/resume_db")
 UPLOAD_FOLDER = os.path.join(BASE_DIR, "static", "uploads")
 MODEL_DIR = os.path.join(BASE_DIR, "models", "saved")
 MODEL_PATH = os.path.join(MODEL_DIR, "model.pkl")
