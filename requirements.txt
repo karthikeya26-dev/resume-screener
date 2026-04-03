@@ -1,0 +1,14 @@
+streamlit
+pandas
+scikit-learn
+PyPDF2
+pdfplumber
+docx2txt
+python-docx
+pytesseract
+Pillow
+nltk
+spacy
+reportlab
+SQLAlchemy
+pymysql

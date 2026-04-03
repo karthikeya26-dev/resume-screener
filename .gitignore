@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+models/saved/
+.env
+static/uploads/
+static/reports/
